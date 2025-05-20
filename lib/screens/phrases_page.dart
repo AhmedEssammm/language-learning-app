@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:language_learning_app/components/list_item.dart';
 import 'package:language_learning_app/models/item_model.dart';
 
-class ColorsPage extends StatelessWidget {
-  const ColorsPage({super.key});
+class PhrasesPage extends StatelessWidget {
+  const PhrasesPage({super.key});
   final List<ItemModel> colors = const [
     ItemModel(
       image: 'assets/images/colors/color_black.png',
@@ -60,7 +60,7 @@ class ColorsPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xFF46322b),
         foregroundColor: Colors.white,
-        title: Text('Colors'),
+        title: Text('Numbers'),
       ),
       body: ListView.builder(
           itemCount: colors.length,

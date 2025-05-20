@@ -3,6 +3,7 @@ import 'package:language_learning_app/components/category_item.dart';
 import 'package:language_learning_app/screens/colors_page.dart';
 import 'package:language_learning_app/screens/family_members_page.dart';
 import 'package:language_learning_app/screens/numbers_page.dart';
+import 'package:language_learning_app/screens/phrases_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -46,6 +47,11 @@ class HomePage extends StatelessWidget {
             color: Color(0xFF79359F),
           ),
           Category(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return PhrasesPage();
+              }));
+            },
             text: 'Phrases',
             color: Color(0xFF50ADC7),
           ),
