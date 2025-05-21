@@ -1,57 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:language_learning_app/components/list_item.dart';
+import 'package:language_learning_app/components/phrase_item.dart';
 import 'package:language_learning_app/models/item_model.dart';
 
 class PhrasesPage extends StatelessWidget {
   const PhrasesPage({super.key});
-  final List<ItemModel> colors = const [
+  final List<ItemModel> phrases = const [
     ItemModel(
-      image: 'assets/images/colors/color_black.png',
-      japaneseName: 'Kuro',
-      englishName: 'Black',
-      sound: 'sounds/colors/black.wav',
+      japaneseName: 'Kimasu ka?',
+      englishName: 'Are you coming?',
+      sound: 'sounds/phrases/are_you_coming.wav',
     ),
     ItemModel(
-      image: 'assets/images/colors/color_brown.png',
-      japaneseName: 'Chairo',
-      englishName: 'Brown',
-      sound: 'sounds/colors/brown.wav',
+      japaneseName: 'Go kibun wa ikagadesu ka?',
+      englishName: 'How are you feeling?',
+      sound: 'sounds/phrases/how_are_you_feeling.wav',
     ),
     ItemModel(
-      image: 'assets/images/colors/color_dusty_yellow.png',
-      japaneseName: 'Dasutiierō',
-      englishName: 'Dusty Yellow',
-      sound: 'sounds/colors/dusty yellow.wav',
+      japaneseName: 'Anime ga daisukidesu.',
+      englishName: 'I love anime.',
+      sound: 'sounds/phrases/i_love_anime.wav',
     ),
     ItemModel(
-      image: 'assets/images/colors/color_gray.png',
-      japaneseName: 'Gurē',
-      englishName: 'Gray',
-      sound: 'sounds/colors/gray.wav',
+      japaneseName: 'Watashi wa puroguramingu ga daisukidesu.',
+      englishName: 'I love programming.',
+      sound: 'sounds/phrases/i_love_programming.wav',
     ),
     ItemModel(
-      image: 'assets/images/colors/color_green.png',
-      japaneseName: 'Gurīnī',
-      englishName: 'Green',
-      sound: 'sounds/colors/green.wav',
+      japaneseName: 'Puroguramingu wa kantandesu.',
+      englishName: 'Programming is easy.',
+      sound: 'sounds/phrases/programming_is_easy.wav',
     ),
     ItemModel(
-      image: 'assets/images/colors/color_red.png',
-      japaneseName: 'Aka',
-      englishName: 'Red',
-      sound: 'sounds/colors/red.wav',
+      japaneseName: 'Anata no namae wa nanidesu ka?',
+      englishName: 'What is your name?',
+      sound: 'sounds/phrases/what_is_your_name.wav',
     ),
     ItemModel(
-      image: 'assets/images/colors/color_white.png',
-      japaneseName: 'Shiro',
-      englishName: 'White',
-      sound: 'sounds/colors/white.wav',
+      japaneseName: 'Doko ni iku no?',
+      englishName: 'Where are you going?',
+      sound: 'sounds/phrases/where_are_you_going.wav',
     ),
     ItemModel(
-      image: 'assets/images/colors/yellow.png',
-      japaneseName: 'Kiiro',
-      englishName: 'Yellow',
-      sound: 'sounds/colors/yellow.wav',
+      japaneseName: 'Hai, kimasu.',
+      englishName: 'Yes, I am coming.',
+      sound: 'sounds/phrases/yes_im_coming.wav',
     ),
   ];
   @override
@@ -60,14 +52,14 @@ class PhrasesPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xFF46322b),
         foregroundColor: Colors.white,
-        title: Text('Numbers'),
+        title: Text('Phrases'),
       ),
       body: ListView.builder(
-          itemCount: colors.length,
+          itemCount: phrases.length,
           itemBuilder: (context, index) {
-            return Item(
-              number: colors[index],
-              color: Color(0xFF79359F),
+            return PhrasesItem(
+              item: phrases[index],
+              color: Color(0xFF50ADC7),
             );
           }),
     );

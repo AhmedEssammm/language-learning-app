@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:language_learning_app/components/item_info.dart';
 import 'package:language_learning_app/models/item_model.dart';
 
-class Item extends StatelessWidget {
-  const Item({super.key, required this.item, required this.color});
+class PhrasesItem extends StatelessWidget {
+  const PhrasesItem({super.key, required this.item, required this.color});
   final ItemModel item;
   final Color color;
   @override
@@ -11,15 +11,7 @@ class Item extends StatelessWidget {
     return Container(
       height: 100,
       color: color,
-      child: Row(
-        children: [
-          Container(
-            color: Color(0xFFFFF6DC),
-            child: Image.asset(item.image!),
-          ),
-          Expanded(child: ItemInfo(item: item))
-        ],
-      ),
+      child: ItemInfo(item: item),
     );
   }
 }
