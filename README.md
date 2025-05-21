@@ -28,8 +28,8 @@ Toku is a simple and beautifully designed Flutter app that helps users learn bas
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/AhmedEssammm/language-learning-app.git
-   cd language_learning_app
+git clone https://github.com/AhmedEssammm/language-learning-app.git
+cd language_learning_app
 ```
 
 2. Get dependencies:
