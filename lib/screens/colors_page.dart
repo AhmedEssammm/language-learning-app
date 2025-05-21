@@ -58,16 +58,16 @@ class ColorsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF46322b),
+        backgroundColor: const Color(0xFF46322b),
         foregroundColor: Colors.white,
-        title: Text('Colors'),
+        title: const Text('Colors'),
       ),
       body: ListView.builder(
           itemCount: colors.length,
           itemBuilder: (context, index) {
             return Item(
               item: colors[index],
-              color: Color(0xFF79359F),
+              color: const Color(0xFF79359F),
             );
           }),
     );

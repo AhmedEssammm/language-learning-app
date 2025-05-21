@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class Category extends StatelessWidget {
-  Category({this.text, this.color, this.onTap});
+  Category({super.key, this.text, this.color, this.onTap});
   String? text;
   Color? color;
   Function()? onTap;
@@ -12,13 +12,13 @@ class Category extends StatelessWidget {
       onTap: onTap,
       child: Container(
         alignment: Alignment.centerLeft,
-        padding: EdgeInsets.only(left: 24),
+        padding: const EdgeInsets.only(left: 24),
         height: 65,
         width: double.infinity,
         color: color,
         child: Text(
           text!,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 18,
           ),

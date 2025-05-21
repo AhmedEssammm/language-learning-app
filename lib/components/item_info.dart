@@ -16,14 +16,14 @@ class ItemInfo extends StatelessWidget {
             children: [
               Text(
                 item.japaneseName,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 18,
                 ),
               ),
               Text(
                 item.englishName,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 18,
                 ),
@@ -31,16 +31,16 @@ class ItemInfo extends StatelessWidget {
             ],
           ),
         ),
-        Spacer(
+        const Spacer(
           flex: 1,
         ),
         Padding(
           padding: const EdgeInsets.only(right: 8),
           child: IconButton(
             onPressed: () {
-              item.PlaySound();
+              item.playSound();
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.play_arrow,
               color: Colors.white,
               size: 28,

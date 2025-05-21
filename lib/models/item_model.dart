@@ -12,7 +12,7 @@ class ItemModel {
       required this.englishName,
       required this.sound});
 
-  PlaySound() {
+  playSound() {
     final player = AudioPlayer();
     player.play(AssetSource(sound));
   }

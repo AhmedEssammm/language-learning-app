@@ -14,7 +14,7 @@ class Item extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            color: Color(0xFFFFF6DC),
+            color: const Color(0xFFFFF6DC),
             child: Image.asset(item.image!),
           ),
           Expanded(child: ItemInfo(item: item))
